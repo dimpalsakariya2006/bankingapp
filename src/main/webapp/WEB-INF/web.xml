@@ -1,0 +1,63 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  <welcome-file> home.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+  	<listener-class>bankingapp.ConnectionListener</listener-class>
+  </listener>
+  <servlet>
+  	<servlet-name>account</servlet-name>
+  	<display-name>account</display-name>
+  	<description></description>
+  	<servlet-class>bankingapp.Account</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>openaccount</servlet-name>
+  	<display-name>openaccount</display-name>
+  	<description></description>
+  	<servlet-class>bankingapp.OpenAccount</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Debit</servlet-name>
+  	<display-name>Debit</display-name>
+  	<description></description>
+  	<servlet-class>bankingapp.Debit</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Credit</servlet-name>
+  	<display-name>Credit</display-name>
+  	<description></description>
+  	<servlet-class>bankingapp.Credit</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewBalance</servlet-name>
+  	<display-name>ViewBalance</display-name>
+  	<description></description>
+  	<servlet-class>bankingapp.ViewBalance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>account</servlet-name>
+  	<url-pattern>/account</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>openaccount</servlet-name>
+  	<url-pattern>/openaccount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Debit</servlet-name>
+  	<url-pattern>/Debit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Credit</servlet-name>
+  	<url-pattern>/Credit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewBalance</servlet-name>
+  	<url-pattern>/ViewBalance</url-pattern>
+  </servlet-mapping>
+</web-app>
